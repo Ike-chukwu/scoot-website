@@ -1,0 +1,24 @@
+$primary-color:hsl(40, 97%, 58%);
+$primary-clr-four: hsl(217, 12%, 62%);
+$ff-700: 700;
+
+.nav{
+    padding: 2rem 18%;
+    display: flex;
+    justify-content: space-between;
+
+    .left-content{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        font-size: 1.8rem;
+        color: $primary-clr-four;
+        font-weight: $ff-700;
+
+        .links{
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}

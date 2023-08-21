@@ -1,0 +1,21 @@
+$primary-color: hsl(40, 97%, 58%);
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 3% 18%;
+}

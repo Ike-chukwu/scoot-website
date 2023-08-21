@@ -1,0 +1,45 @@
+.features{
+    // height: 80vh;
+    padding-block: 16rem;
+    .features-icons-pack{
+        position: relative;
+        display: flex;
+        width:750px;
+        justify-content: space-between;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 1040px;
+            height: 14px;
+            background: grey;
+            z-index: -1;
+            left: -50%;
+           top: 50%;
+           transform: translateY(-50%);
+           background: #E6EDF4;
+        }
+    }
+
+    .features-content {
+        width:1000px;
+        display: flex;
+        gap: 3rem;
+        // justify-content: space-between;
+        margin-top: 5rem;
+        .fatures-card{
+            width: 30%;
+            h3{
+                font-size: 2rem;
+            }
+            img{
+                display: none;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 1.5;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
