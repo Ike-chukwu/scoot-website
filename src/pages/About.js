@@ -6,6 +6,7 @@ import living from "../assets/images/better-living.jpg";
 import FeatureDetailRight from "../components/FeatureDetailRight/FeatureDetailRight";
 import FeatureDetailLeft from "../components/FeatureDetailLeft/FeatureDetailLeft";
 import Values from "../components/Values/Values";
+import Faqs from "../components/Faqs/Faqs";
 
 const About = () => {
   return (
@@ -21,7 +22,8 @@ const About = () => {
         heading="Better urban living"
         image={living}
       />
-      <Values/>
+      <Values heading="Our values"/>
+      <Faqs/>
     </div>
   );
 };

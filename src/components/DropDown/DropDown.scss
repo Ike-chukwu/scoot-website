@@ -1,0 +1,44 @@
+.dropdown {
+  flex: 1;
+  background: rgb(242, 245, 249);
+  border-radius: 0.25rem;
+  padding: 2rem 3rem;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  &.active {
+    height: fit-content;
+    background: #fff4df;
+  }
+  .top {
+    display: flex;
+    padding-block: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    .normal {
+      cursor: pointer;
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
+    h3 {
+      font-size: 2.6rem;
+      width: 100%;
+      &.activated {
+        color: #0c63e4;
+        border: 0.3rem solid #0c63e4;
+      }
+    }
+    &:hover {
+      background: #fff4df;
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+}

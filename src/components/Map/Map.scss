@@ -1,0 +1,111 @@
+.map {
+  padding: 10rem 18%;
+  .map-cont {
+    position: relative;
+    .desktop {
+      width: 100%;
+      text-align: center;
+      margin-inline: auto;
+    }
+    .top-right {
+      position: absolute;
+      background: hsl(40, 97%, 58%);
+      width: 120px;
+      height: 35px;
+      padding: 10px;
+      top: 17%;
+      right: 10%;
+      line-height: 17px;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .top-right:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid;
+      transform: rotate(270deg);
+      border-color: transparent hsl(40, 97%, 58%) transparent transparent;
+      left: 50%;
+      top: 35px;
+    }
+    .bottom-right {
+      position: absolute;
+      background: hsl(40, 97%, 58%);
+      width: 120px;
+      height: 35px;
+      padding: 10px;
+      bottom: 49%;
+      right: 16%;
+      line-height: 17px;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .bottom-right:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid;
+      transform: rotate(270deg);
+      border-color: transparent hsl(40, 97%, 58%) transparent transparent;
+      left: 50%;
+      top: 35px;
+    }
+    .top-left {
+      position: absolute;
+      background: hsl(40, 97%, 58%);
+      width: 120px;
+      height: 35px;
+      padding: 10px;
+      top: 8%;
+      right: 53%;
+      line-height: 17px;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .top-left:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid;
+      transform: rotate(270deg);
+      border-color: transparent hsl(40, 97%, 58%) transparent transparent;
+      left: 50%;
+      top: 35px;
+    }
+    .bottom-left {
+      position: absolute;
+      background: hsl(40, 97%, 58%);
+      width: 120px;
+      height: 35px;
+      padding: 10px;
+      top: 17%;
+      left: 13%;
+      line-height: 17px;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .bottom-left:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid;
+      transform: rotate(270deg);
+      border-color: transparent hsl(40, 97%, 58%) transparent transparent;
+      left: 50%;
+      top: 35px;
+    }
+  }
+  .tablet,
+  .mobile {
+    display: none;
+  }
+}

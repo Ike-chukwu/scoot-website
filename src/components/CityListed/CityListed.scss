@@ -1,0 +1,18 @@
+.city-listed {
+  padding: 10rem 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    color: #495567;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #939caa;
+    max-width: 450px;
+    
+  }
+}

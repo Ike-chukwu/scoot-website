@@ -1,0 +1,19 @@
+.faqs {
+  padding: 10rem 18%;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .faqs-inner-content {
+    margin-inline: auto;
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    h2 {
+      width: 500px;
+      font-size: 4rem;
+    }
+  }
+}
