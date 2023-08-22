@@ -1,0 +1,16 @@
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 12rem;
+    background: #495567 url(../../assets/patterns/semi-circles.svg) no-repeat right bottom;
+    color: white;
+    h1{
+        font-size: 3rem;
+    }
+
+    .btn-row{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+}

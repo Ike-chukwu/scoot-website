@@ -1,0 +1,28 @@
+.footer{
+    background: #333A44;
+    padding: 2% 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-part{
+        display: flex;
+        gap: 10rem;
+        align-items: center;
+
+        .nav-links{
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            color: #939caa;
+            font-size: 1.8rem;
+        }
+    }
+
+    .right-part{
+        color: hsl(40, 97%, 58%);
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+}

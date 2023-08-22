@@ -1,16 +1,16 @@
 .features{
     // height: 80vh;
-    padding-block: 16rem;
+    padding-block: 10rem;
     .features-icons-pack{
         position: relative;
         display: flex;
-        width:750px;
+        width:1050px;
         justify-content: space-between;
 
         &::before{
             position: absolute;
             content: '';
-            width: 1040px;
+            width: 1500px;
             height: 14px;
             background: grey;
             z-index: -1;
@@ -22,7 +22,7 @@
     }
 
     .features-content {
-        width:1000px;
+        width:1500px;
         display: flex;
         gap: 3rem;
         // justify-content: space-between;
@@ -39,6 +39,7 @@
                 font-size: 1.6rem;
                 line-height: 1.5;
                 margin-top: 1.5rem;
+                width: 280px;
             }
         }
     }

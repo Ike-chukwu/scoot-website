@@ -1,50 +1,50 @@
-.hero{
-    background: green;
-    width: 100vw;
-    min-height: 80vh;
-    background: url(../../assets/images/home-hero-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.hero {
+  background: green;
+  width: 100vw;
+  min-height: 80vh;
+  background: url(../../assets/images/home-hero-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-    .hero-section{
-        padding-block: 20rem;
-        color: white;
-        h1{
-            font-size: 3.5rem;
-        }
-
-        p{
-            font-size: 1.6rem;
-            width: 400px;
-            line-height: 1.5;
-            position: relative;
-            padding-left: 8rem;
-            margin-block: 3.5rem;
-            &::before{
-                position: absolute;
-                content: url(../../assets/patterns/line.svg);
-                left: -45%;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            &::after{
-                position: absolute;
-                content: url(../../assets/patterns/right-arrow.svg);
-                right: -123%;
-                top: 42%;
-            }
-        }
-
-        img{
-            position: absolute;
-            right: -2%;
-            bottom: 35%;
-        }
-
-        button{
-            margin-left: 8rem;
-        }
+  .hero-section {
+    padding-block: 20rem;
+    color: white;
+    h1 {
+      font-size: 4rem;
     }
+
+    p {
+      font-size: 1.6rem;
+      width: 400px;
+      line-height: 1.5;
+      position: relative;
+      padding-left: 8rem;
+      margin-block: 3.5rem;
+      &::before {
+        position: absolute;
+        content: url(../../assets/patterns/line.svg);
+        left: -45%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &::after {
+        position: absolute;
+        content: url(../../assets/patterns/right-arrow.svg);
+        right: -123%;
+        top: 42%;
+      }
+    }
+
+    img {
+      position: absolute;
+      right: -2%;
+      bottom: 35%;
+    }
+
+    button {
+      margin-left: 8rem;
+    }
+  }
 }

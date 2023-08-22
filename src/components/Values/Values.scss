@@ -1,0 +1,14 @@
+.values {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #495567;
+  }
+  .value-pack {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding-block: 6rem;
+    gap: 5rem;
+  }
+}
