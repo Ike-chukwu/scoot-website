@@ -24,11 +24,12 @@
       }
     }
     h3 {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       width: 100%;
+      color: rgb(33, 37, 41);
       &.activated {
         color: #0c63e4;
-        border: 0.3rem solid #0c63e4;
+        border: 0.3rem solid rgb(134, 183, 254);
       }
     }
     &:hover {
@@ -40,5 +41,8 @@
     font-size: 1.6rem;
     line-height: 1.5;
     margin-top: 1rem;
+    color: rgb(73, 85, 103);
   }
 }
+
+

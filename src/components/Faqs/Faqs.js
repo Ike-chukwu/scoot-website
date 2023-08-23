@@ -6,7 +6,7 @@ const Faqs = () => {
   const firstFaqs = [
     {
       id: Math.random(),
-      heading: "How do I doenload the app?",
+      heading: "How do I download the app?",
       value:
         "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.",
     },

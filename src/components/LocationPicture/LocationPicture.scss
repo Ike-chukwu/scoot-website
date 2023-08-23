@@ -1,10 +1,16 @@
 .location {
   position: relative;
-  .place {
+  .placeD {
     width: 100%;
     background-position: center;
   }
-
+  .placeT,.placeM{
+    display: none;
+  }
+  .inner-location{
+    width: 1200px;
+    margin-inline: auto;
+  }
   .circle {
     position: absolute;
     right: -2%;
@@ -18,6 +24,23 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 18%;
+  }
+}
+
+
+@media(max-width:1260px){
+  .location{
+
+    .placeT {
+      display: unset;
+      width: 100%;
+      background-position: center;
+    }
+    .placeM, .placeD {
+      display: none;
+    }
+    .inner-location{
+      width:900px;
+    }
   }
 }

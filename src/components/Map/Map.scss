@@ -1,5 +1,7 @@
 .map {
-  padding: 10rem 18%;
+  padding-block: 10rem;
+  width: 1200px;
+  margin-inline: auto;
   .map-cont {
     position: relative;
     .desktop {
@@ -103,9 +105,32 @@
       left: 50%;
       top: 35px;
     }
+    .tablet,
+    .mobile {
+      display: none;
+    }
+    .mobile {
+      display: none;
+    }
   }
-  .tablet,
-  .mobile {
-    display: none;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    padding-block: 10rem;
+    width: 900px;
+
+    .map-cont {
+      .desktop,
+      .mobile {
+        display: none;
+      }
+      .tablet {
+        display: unset;
+        width: 100%;
+        text-align: center;
+        margin-inline: auto;
+      }
+    }
   }
 }

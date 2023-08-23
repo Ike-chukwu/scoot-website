@@ -9,13 +9,13 @@ const Map = () => {
     <div className="map">
       <div className="map-cont">
         <img src={desktopMap} className="desktop" alt="" />
+        <img src={tabletMap} className="tablet" alt="" />
+        <img src={phoneMap} className="mobile" alt="" />
         <div className="top-right">Yokohoma</div>
         <div className="bottom-right">Jakarta</div>
         <div className="top-left">London</div>
         <div className="bottom-left">New York</div>
       </div>
-      <img src={tabletMap} className="tablet" alt="" />
-      <img src={phoneMap} className="mobile" alt="" />
     </div>
   );
 };

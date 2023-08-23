@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 10rem 18%;
+  width: 1200px;
+  margin-inline: auto;
+  padding-block: 10rem;
   .left {
     width: 40%;
     h1 {
@@ -32,6 +33,42 @@
       content: url(../../assets/patterns/circle.svg);
       position: absolute;
       right: -155%;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .detail {
+    width: 900px;
+    flex-direction: column-reverse;
+    .left {
+      margin-top: 4rem;
+      width: 60%;
+      text-align: center;
+
+      p {
+        margin-block: 3rem;
+      }
+    }
+    .right {
+      width: 100%;
+      text-align: center;
+      &::before {
+        content: url(../../assets/patterns/left-downward-arrow.svg);
+        position: absolute;
+        top: 50%;
+        left: -30%;
+      }
+      display: flex;
+      img {
+        margin-inline: auto;
+        border-radius: 50%;
+      }
+      &::after {
+        content: url(../../assets/patterns/circle.svg);
+        position: absolute;
+        right: -55%;
+      }
     }
   }
 }

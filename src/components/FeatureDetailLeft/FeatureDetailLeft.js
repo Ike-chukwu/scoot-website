@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import wilderness from "../../assets/images/near-you.jpg";
 import arrow from "../../assets/patterns/right-arrow.svg";
 
+
 const FeatureDetailLeft = (props) => {
   return (
     <div className="detail-left">

@@ -1,5 +1,7 @@
 .city-listed {
-  padding: 10rem 18%;
+  padding-block: 10rem;
+  width: 1200px;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,5 +16,20 @@
     color: #939caa;
     max-width: 450px;
     
+  }
+}
+
+
+@media(max-width:1200px){
+  .city-listed {
+    width: 900px;
+    flex-direction: column;
+    gap: 3rem;
+
+    p{
+      text-align: center;
+      max-width: unset;
+      width: 80%;
+    }
   }
 }

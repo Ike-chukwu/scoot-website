@@ -9,6 +9,8 @@
   position: relative;
 
   .hero-section {
+    width: 1200px;
+    margin-inline: auto;
     padding-block: 20rem;
     color: white;
     h1 {
@@ -45,6 +47,45 @@
 
     button {
       margin-left: 8rem;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .hero {
+    background: url(../../assets/images/home-hero-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero-section {
+      width: 900px;
+      color: white;
+      text-align: center;
+      padding-block: 15rem;
+      p {
+        padding-left: 0;
+        margin-inline: auto;
+        width: 70%;
+        &::before {
+          content: "";
+        }
+        &::after {
+          position: absolute;
+          content: url(../../assets/patterns/right-arrow.svg);
+          left: -1600px;
+          top: 420%;
+        }
+      }
+
+      img {
+        position: absolute;
+        right: -2%;
+        bottom: 20%;
+      }
+
+      button {
+        margin-left: 8rem;
+      }
     }
   }
 }

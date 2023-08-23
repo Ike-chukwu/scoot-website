@@ -1,5 +1,7 @@
 .pack {
-  padding: 10rem 18%;
+  padding-block: 10rem;
+  width: 1200px;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -29,6 +31,19 @@
 
     button {
       padding: 1.8rem 9rem;
+    }
+  }
+}
+
+
+@media(max-width:1200px){
+  .pack {
+    padding-block: 10rem;
+    width: 900px;
+
+    .card {
+      width: 70%;
+      margin-inline: auto;
     }
   }
 }

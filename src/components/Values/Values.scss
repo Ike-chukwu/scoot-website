@@ -1,4 +1,5 @@
 .values {
+  padding-block: 10rem;
   h1 {
     font-size: 5rem;
     text-align: center;
@@ -7,8 +8,19 @@
   .value-pack {
     display: flex;
     // justify-content: space-between;
+    width: 1200px;
+    margin-inline: auto;
     align-items: center;
-    padding-block: 6rem;
+    padding-top: 6rem;
     gap: 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .values {
+    .value-pack {
+      flex-direction: column;
+      width: 900px;
+    }
   }
 }

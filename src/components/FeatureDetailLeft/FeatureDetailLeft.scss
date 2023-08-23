@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 10rem 18%;
+  width: 1200px;
+  margin-inline: auto;
+  padding-block: 10rem;
 
   .left {
     position: relative;
@@ -30,7 +31,7 @@
   }
 
   .right {
-   width: 420px;
+    width: 420px;
     h1 {
       font-size: 3rem;
     }
@@ -38,6 +39,55 @@
       font-size: 1.6rem;
       margin-block: 5rem;
       line-height: 1.5;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .detail-left {
+    width: 900px;
+    flex-direction: column;
+    .left {
+      margin-top: unset;
+      width: 100%;
+      text-align: center;
+      img {
+        margin-inline: auto;
+      }
+      p {
+        margin-block: 3rem;
+      }
+      &::before {
+        content: url(../../assets/patterns/right-arrow.svg);
+        position: absolute;
+        transform: rotate(360deg);
+        left: -20%;
+        top: unset;
+        z-index: 1;
+      }
+      &::after {
+        content: url(../../assets/patterns/circle.svg);
+        position: absolute;
+        left: -55%;
+        bottom: 0%;
+      }
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 4rem;
+      p {
+        margin-block: 3rem;
+      }
+      &::before {
+        content: "";
+      }
+      &::after {
+        content: "";
+      }
     }
   }
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import LocationPicture from '../components/LocationPicture/LocationPicture'
-import location from '../assets/images/careers-locations-hero-desktop.jpg'
+import locationD from '../assets/images/careers-locations-hero-desktop.jpg'
+import locationT from '../assets/images/careers-locations-hero-tablet.jpg'
+import locationM from '../assets/images/careers-location-hero-mobile.jpg'
 import Map from '../components/Map/Map'
 import CityListed from '../components/CityListed/CityListed'
 
@@ -8,7 +10,7 @@ import CityListed from '../components/CityListed/CityListed'
 const Location = () => {
   return (
     <div>
-      <LocationPicture location="Location" image={location}/>
+      <LocationPicture location="Location" imageD={locationD} imageT={locationT} imageM={locationM}/>
       <Map/>
       <CityListed/>
     </div>

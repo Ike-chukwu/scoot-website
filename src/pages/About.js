@@ -1,6 +1,8 @@
 import React from "react";
 import LocationPicture from "../components/LocationPicture/LocationPicture";
-import image from "../assets/images/about-hero-desktop.jpg";
+import imageD from "../assets/images/about-hero-desktop.jpg";
+import imageM from "../assets/images/about-hero-mobile.jpg";
+import imageT from "../assets/images/about-hero-tablet.jpg";
 import digital from "../assets/images/digital-era.jpg";
 import living from "../assets/images/better-living.jpg";
 import FeatureDetailRight from "../components/FeatureDetailRight/FeatureDetailRight";
@@ -11,7 +13,7 @@ import Faqs from "../components/Faqs/Faqs";
 const About = () => {
   return (
     <div>
-      <LocationPicture location="About" image={image} />
+      <LocationPicture location="About" imageD={imageD} imageT={imageT} imageM={imageM} />
       <FeatureDetailRight
         paragraph="Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips."
         heading="Mobility for the digital era"

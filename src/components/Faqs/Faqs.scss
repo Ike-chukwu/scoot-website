@@ -1,8 +1,11 @@
 .faqs {
-  padding: 10rem 18%;
+  padding-block: 10rem;
+  width: 1200px;
+  margin-inline: auto;
   h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    color: #495567;
   }
 
   .faqs-inner-content {
@@ -14,6 +17,23 @@
     h2 {
       width: 500px;
       font-size: 4rem;
+      color: rgb(73, 85, 103);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .faqs {
+    width: 900px;
+
+    .faqs-inner-content {
+      flex-direction: column;
+      
+      h2{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
