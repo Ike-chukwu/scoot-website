@@ -7,6 +7,7 @@ import FeatureDetailRight from "../components/FeatureDetailRight/FeatureDetailRi
 import career from '../assets/images/join-us.jpg'
 import Values from "../components/Values/Values";
 import CardPack from "../components/CardPack/CardPack";
+import Transition from "../components/Transition/Transition";
 
 const Careers = () => {
   return (
@@ -23,4 +24,4 @@ const Careers = () => {
   );
 };
 
-export default Careers;
+export default Transition(Careers);

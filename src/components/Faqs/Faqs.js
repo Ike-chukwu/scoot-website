@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Faqs.scss";
 import DropDown from "../DropDown/DropDown";
+import Reveal from "../Reveal/Reveal";
 
 const Faqs = () => {
   const firstFaqs = [
@@ -46,20 +47,25 @@ const Faqs = () => {
 
   return (
     <div className="faqs">
-      <h1>faqs</h1>
-      <div className="faqs-inner-content">
-        <h2>How it works</h2>
-        <div className="drop-down-pack">
-          {firstFaqs.map((item, index) => (
-            <DropDown
-              key={index + item.id}
-              heading={item.heading}
-              value={item.value}
-              id={item.id}
-            />
-          ))}
+      <Reveal>
+        {" "}
+        <h1>faqs</h1>
+      </Reveal>
+      <Reveal>
+        <div className="faqs-inner-content">
+          <h2>How it works</h2>
+          <div className="drop-down-pack">
+            {firstFaqs.map((item, index) => (
+              <DropDown
+                key={index + item.id}
+                heading={item.heading}
+                value={item.value}
+                id={item.id}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </Reveal>
       <div className="faqs-inner-content">
         <h2>Safe driving</h2>
         <div className="drop-down-pack">

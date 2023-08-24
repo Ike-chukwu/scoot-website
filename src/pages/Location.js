@@ -5,7 +5,7 @@ import locationT from '../assets/images/careers-locations-hero-tablet.jpg'
 import locationM from '../assets/images/careers-location-hero-mobile.jpg'
 import Map from '../components/Map/Map'
 import CityListed from '../components/CityListed/CityListed'
-
+import Transition from '../components/Transition/Transition'
 
 const Location = () => {
   return (
@@ -17,4 +17,4 @@ const Location = () => {
   )
 }
 
-export default Location
+export default Transition(Location)

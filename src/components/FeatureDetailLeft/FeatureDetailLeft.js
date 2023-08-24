@@ -1,9 +1,7 @@
 import React from "react";
 import "./FeatureDetailLeft.scss";
 import Button from "../Button/Button";
-import wilderness from "../../assets/images/near-you.jpg";
-import arrow from "../../assets/patterns/right-arrow.svg";
-
+import Reveal from "../Reveal/Reveal";
 
 const FeatureDetailLeft = (props) => {
   return (
@@ -12,11 +10,15 @@ const FeatureDetailLeft = (props) => {
         <img src={props.image} alt="" />
       </div>
       <div className="right">
-        <h1>{props.heading}</h1>
-        <p>
-          {props.paragraph}
-        </p>
-        <Button>Learn More</Button>
+        <Reveal>
+          <h1>{props.heading}</h1>
+        </Reveal>
+        <Reveal>
+          <p>{props.paragraph}</p>
+        </Reveal>
+        <Reveal>
+          <Button>Learn More</Button>
+        </Reveal>
       </div>
     </div>
   );

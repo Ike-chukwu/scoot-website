@@ -2,18 +2,21 @@ $primary-color: hsl(40, 97%, 58%);
 
 .footer {
   background: #333a44;
-  padding-block: 2%;
+  padding-block: 4%;
   .footer-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1200px;
     margin-inline: auto;
-
+    .left-part {
+      display: flex;
+      gap: 6rem;
+      align-items: center;
       .nav-links {
         display: flex;
         align-items: center;
-        gap: 5.5rem;
+        gap: 6rem;
         color: #939caa;
         font-size: 1.8rem;
 
@@ -24,6 +27,7 @@ $primary-color: hsl(40, 97%, 58%);
           }
         }
       }
+    }
 
     .right-part {
       color: hsl(40, 97%, 58%);
@@ -50,10 +54,13 @@ $primary-color: hsl(40, 97%, 58%);
       padding-block: 5rem;
       flex-direction: column;
       gap: 6rem;
-      .nav-links {
+      .left-part {
         flex-direction: column;
-        gap: unset;
-        gap: 6rem;
+        .nav-links {
+          flex-direction: column;
+          gap: unset;
+          gap: 6rem;
+        }
       }
     }
   }

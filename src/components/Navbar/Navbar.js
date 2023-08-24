@@ -4,10 +4,28 @@ import logo from "../../assets/logo.svg";
 import bars from "../../assets/icons/hamburger.svg";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const childContainer = {
+    initial: {
+      opacity: 0,
+      y: -60,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   return (
-    <div className="nav">
+    <motion.div
+      variants={childContainer}
+      animate="animate"
+      initial="initial"
+      transition={{ delay: 1.5, duration: 0.7 }}
+      className="nav"
+    >
       <div className="left-content">
         <img className="menu-bar" src={bars} alt="" />
         <Link to="/">
@@ -24,7 +42,7 @@ const Navbar = () => {
         </Link>
       </div>
       <Button>Get Scootin</Button>
-    </div>
+    </motion.div>
   );
 };
 

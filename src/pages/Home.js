@@ -8,7 +8,7 @@ import wilderness from "../../src/assets/images/near-you.jpg";
 import arrow from "../../src/assets/patterns/right-arrow.svg";
 import cashier from "../../src/assets/images/payments.jpg";
 import SignUp from "../components/SignUp/SignUp";
-
+import Transition from "../components/Transition/Transition";
 
 const Home = () => {
   return (
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Transition(Home);

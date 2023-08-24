@@ -4,7 +4,8 @@ import logo from "../../assets/logo.svg";
 import fb from "../../assets/icons/facebook.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import ig from "../../assets/icons/instagram.svg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 
 const Footer = () => {
@@ -12,10 +13,8 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-inner">
         <div className="left-part">
+          <img src={logo} alt="" />
           <div className="nav-links">
-            <Link to="/">
-              <img className="logo" src={logo} alt="" />
-            </Link>
             <Link to="/about">
               <span className="links">About</span>
             </Link>

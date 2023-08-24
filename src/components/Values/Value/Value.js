@@ -1,18 +1,25 @@
 import React from "react";
 import "./Value.scss";
+import Reveal from "../../Reveal/Reveal";
 
 const Value = (props) => {
   return (
-    <div className="value">
-      <div className="img-pack">
-        <img src={props.image} alt="" />
-        <div className="circle">{props.number}</div>
+    <Reveal>
+      <div className="value">
+        <div className="img-pack">
+          <Reveal>
+            <img src={props.image} alt="" />
+          </Reveal>
+          <div className="circle">{props.number}</div>
+        </div>
+        <Reveal>
+          <h3>{props.heading}</h3>
+        </Reveal>
+        <Reveal>
+          <p>{props.text}</p>
+        </Reveal>
       </div>
-      <h3>{props.heading}</h3>
-      <p>
-       {props.text}
-      </p>
-    </div>
+    </Reveal>
   );
 };
 

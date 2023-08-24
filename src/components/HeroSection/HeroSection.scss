@@ -1,5 +1,4 @@
 .hero {
-  background: green;
   width: 100vw;
   min-height: 80vh;
   background: url(../../assets/images/home-hero-desktop.jpg);
@@ -62,6 +61,7 @@
       color: white;
       text-align: center;
       padding-block: 15rem;
+      margin-inline: auto;
       p {
         padding-left: 0;
         margin-inline: auto;
@@ -84,7 +84,7 @@
       }
 
       button {
-        margin-left: 8rem;
+        margin-left: 0rem;
       }
     }
   }
@@ -134,7 +134,6 @@
           position: absolute;
           width: 100%;
           content: url(../../assets/patterns/right-arrow.svg);
-          // left: -140%;
           top: 140%;
         }
       }

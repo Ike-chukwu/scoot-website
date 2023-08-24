@@ -9,6 +9,7 @@ import FeatureDetailRight from "../components/FeatureDetailRight/FeatureDetailRi
 import FeatureDetailLeft from "../components/FeatureDetailLeft/FeatureDetailLeft";
 import Values from "../components/Values/Values";
 import Faqs from "../components/Faqs/Faqs";
+import Transition from "../components/Transition/Transition";
 
 const About = () => {
   return (
@@ -30,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Transition(About);
