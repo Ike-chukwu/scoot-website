@@ -13,12 +13,10 @@ const Features = () => {
           <img src={locate} alt="" />
         </Reveal>
         <Reveal>
-          {" "}
           <img src={scooter} alt="" />
         </Reveal>
         <Reveal>
-          {" "}
-          <img src={ride} alt="" />{" "}
+          <img src={ride} alt="" />
         </Reveal>
       </div>
 

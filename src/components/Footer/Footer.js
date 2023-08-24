@@ -1,19 +1,16 @@
 import React from "react";
 import "./Footer.scss";
 import logo from "../../assets/logo.svg";
-import fb from "../../assets/icons/facebook.svg";
-import twitter from "../../assets/icons/twitter.svg";
-import ig from "../../assets/icons/instagram.svg";
 import { Link } from "react-router-dom";
-
-
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-inner">
         <div className="left-part">
-          <img src={logo} alt="" />
+          <Link to='/'>
+            <img src={logo} alt="" />
+          </Link>
           <div className="nav-links">
             <Link to="/about">
               <span className="links">About</span>
@@ -27,9 +24,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="right-part">
-          <i className="fab fa-facebook-f"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-instagram"></i>
+          <Link
+            to="https://github.com/Ike-chukwu?tab=repositories"
+            style={{ color: "unset" }}
+          >
+            <i className="fab fa-facebook-f"></i>
+          </Link>
+          <Link
+            to="https://github.com/Ike-chukwu?tab=repositories"
+            style={{ color: "unset" }}
+          >
+            <i className="fab fa-twitter"></i>
+          </Link>
+          <Link
+            to="https://github.com/Ike-chukwu?tab=repositories"
+            style={{ color: "unset" }}
+          >
+            <i className="fab fa-instagram"></i>
+          </Link>
         </div>
       </div>
     </div>

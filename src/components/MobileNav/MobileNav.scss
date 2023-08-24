@@ -1,0 +1,42 @@
+$primary-color: hsl(40, 97%, 58%);
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .mobile-nav {
+    display: unset;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background: #495567;
+    padding-left: 15%;
+    padding-top: 40%;
+    z-index: 100;
+    opacity:0;
+    transition: all .4s linear;
+
+    &.active{
+        top: 0;
+        opacity:1
+    }
+
+    .m-link {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 5rem;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 3%;
+      right: 5%;
+      cursor: pointer;
+    }
+  }
+}

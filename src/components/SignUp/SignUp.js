@@ -3,7 +3,9 @@ import "./SignUp.scss";
 import apple from "../../assets/icons/app-store.svg";
 import playstore from "../../assets/icons/google-play.svg";
 import "./SignUp.scss";
-import Reveal from '../../components/Reveal/Reveal'
+import Reveal from "../../components/Reveal/Reveal";
+import { Link } from "react-router-dom";
+
 
 const SignUp = () => {
   return (
@@ -14,8 +16,18 @@ const SignUp = () => {
             Sign up and <br /> Scoot off today
           </h1>
           <div className="btn-row">
-            <img src={apple} alt="" />
-            <img src={playstore} alt="" />
+            <Link
+              to="https://www.apple.com/app-store/"
+              className="img"
+            >
+              <img src={apple} alt="" />
+            </Link>
+            <Link
+              to="https://play.google.com/store/games?hl=en&gl=US"
+              className="img"
+            >
+              <img src={playstore} alt="" />
+            </Link>
           </div>
         </div>
       </section>

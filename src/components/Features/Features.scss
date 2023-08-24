@@ -1,5 +1,4 @@
 .features {
-  // height: 80vh;
   width: 1200px;
   margin-inline: auto;
   padding-block: 10rem;
@@ -42,7 +41,6 @@
         line-height: 1.5;
         margin-top: 1.5rem;
         color: #929baa;
-        // width: 280px;
       }
     }
   }
@@ -55,7 +53,6 @@
     align-items: center;
     justify-content: center;
     gap: 10rem;
-    // background: blue;
 
     .features-icons-pack {
       flex-direction: column;
@@ -63,7 +60,6 @@
       gap: 4rem;
 
       &::before {
-        // transform: rotate(90deg);
         left: 45%;
         top: 0;
         width: 10px;
@@ -81,63 +77,58 @@
   }
 }
 
-
-
 @media (max-width: 940px) {
   .features {
-    // height: 80vh;
     padding-inline: 2rem;
     width: unset;
 
     .features-icons-pack {
-        display: none;
+      display: none;
     }
 
     .features-content {
-        width: unset;
-        gap: 6rem;
-        margin-top: 5rem;
-        .fatures-card {
-          width: 70%;
-          margin-inline: auto;
-          text-align: center;
-          h3 {
-           margin-block: 2rem;
-          }
-          img {
-            display: unset;
-          }
-          p {
-            font-size: 1.6rem;
-            line-height: 1.5;
-            margin-top: 1.5rem;
-            width: 100%;
-          }
+      width: unset;
+      gap: 6rem;
+      margin-top: 5rem;
+      .fatures-card {
+        width: 70%;
+        margin-inline: auto;
+        text-align: center;
+        h3 {
+          margin-block: 2rem;
+        }
+        img {
+          display: unset;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 1.5;
+          margin-top: 1.5rem;
+          width: 100%;
         }
       }
+    }
   }
 }
 
-
 @media (max-width: 600px) {
   .features {
-    // padding-block: 5rem;
     .features-content {
-        width: unset;
-        gap: 6rem;
-        margin-top: 5rem;
-        .fatures-card {
+      width: unset;
+      gap: 6rem;
+      margin-top: 5rem;
+      .fatures-card {
+        width: 100%;
+        h3 {
+          margin-block: 2rem;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 1.5;
+          margin-top: 1.5rem;
           width: 100%;
-          h3 {
-           margin-block: 2rem;;
-          }
-          p {
-            font-size: 1.6rem;
-            line-height: 1.5;
-            margin-top: 1.5rem;
-            width: 100%;
-          }
         }
       }
+    }
   }
 }

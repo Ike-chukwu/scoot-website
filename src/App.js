@@ -8,11 +8,16 @@ import Careers from "./pages/Careers";
 import Location from "./pages/Location";
 import SignUp from "./components/SignUp/SignUp";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import {  useState } from "react";
 import { useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import MobileNav from "./components/MobileNav/MobileNav";
 
 function App() {
+
+  const [isNavActive, setNavActive] = useState(false)
+
+
   const appVariants = {
     initial: {
       opacity: 0,
@@ -23,7 +28,6 @@ function App() {
   };
 
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <motion.div
       className="App"
@@ -31,7 +35,8 @@ function App() {
       initial="initial"
       animate="animate"
     >
-      <Navbar />
+      <Navbar setNavActive={setNavActive} isNavActive={isNavActive} />
+      <MobileNav setNavActive={setNavActive} isNavActive={isNavActive}/>
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home />} />

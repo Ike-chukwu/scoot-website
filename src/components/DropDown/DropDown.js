@@ -5,7 +5,6 @@ import Reveal from "../Reveal/Reveal";
 
 const DropDown = (props) => {
   const [isDown, setIsDown] = useState(false);
-  const [currentId, setCurrentID] = useState();
 
   const dropDownHandler = () => {
     setIsDown(!isDown);

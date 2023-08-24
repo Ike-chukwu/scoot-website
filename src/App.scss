@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
 $primary-color: hsl(40, 97%, 58%);
 
 * {
@@ -8,7 +9,8 @@ $primary-color: hsl(40, 97%, 58%);
   padding: 0;
 }
 
-html,body {
+html,
+body {
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -17,6 +19,16 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  // padding: 3% 18%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono", monospace;
+}
+
+p,
+span {
+  font-family: "Lexend Deca", sans-serif;
 }

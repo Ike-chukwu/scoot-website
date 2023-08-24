@@ -41,9 +41,12 @@
             gap: 6rem;
            
             .btn-row {
-              img{
+              .img{
                 width: 35%;
                 margin-inline: auto;
+                img{
+                  width: 100%;
+                }
               }
             }
         }

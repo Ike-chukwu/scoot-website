@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const childContainer = {
     initial: {
       opacity: 0,
@@ -27,7 +27,12 @@ const Navbar = () => {
       className="nav"
     >
       <div className="left-content">
-        <img className="menu-bar" src={bars} alt="" />
+        <img
+          className="menu-bar"
+          onClick={() => props.setNavActive(!props.isNavActive)}
+          src={bars}
+          alt=""
+        />
         <Link to="/">
           <img className="logo" src={logo} alt="" />
         </Link>

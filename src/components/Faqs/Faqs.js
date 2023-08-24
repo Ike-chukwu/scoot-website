@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Faqs.scss";
 import DropDown from "../DropDown/DropDown";
 import Reveal from "../Reveal/Reveal";

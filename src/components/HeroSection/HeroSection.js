@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import "./HeroSection.scss";
 import whitecircle from "../../assets/patterns/white-circles.svg";
-import rightArrow from "../../assets/patterns/right-arrow.svg";
-import Button from "../Button/Button";
-import Reveal from "../Reveal/Reveal";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {

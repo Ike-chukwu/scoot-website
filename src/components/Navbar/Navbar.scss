@@ -26,6 +26,7 @@ $ff-700: 700;
 
     .menu-bar {
       display: none;
+
     }
   }
 }
@@ -48,6 +49,7 @@ $ff-700: 700;
       justify-content: space-between;
       .menu-bar {
         display: unset;
+        cursor: pointer;
       }
 
       .links {
