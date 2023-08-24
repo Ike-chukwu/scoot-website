@@ -89,3 +89,76 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .hero {
+    background: url(../../assets/images/home-hero-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: unset;
+
+    .hero-section {
+      width: unset;
+
+      p {
+        &::after {
+          position: absolute;
+          width: 100%;
+          content: url(../../assets/patterns/right-arrow.svg);
+          left: -70%;
+          top: 200%;
+        }
+      }
+
+      img {
+        display: none;
+      }
+
+      button {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    .hero-section {
+      width: unset;
+      padding-inline: 2rem;
+      p {
+        width: 100%;
+        &::after {
+          position: absolute;
+          width: 100%;
+          content: url(../../assets/patterns/right-arrow.svg);
+          // left: -140%;
+          top: 140%;
+        }
+      }
+
+      img {
+        display: none;
+      }
+
+      button {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .hero {
+    .hero-section {
+      p {
+        width: 100%;
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+}

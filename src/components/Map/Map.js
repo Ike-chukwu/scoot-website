@@ -15,6 +15,12 @@ const Map = () => {
         <div className="bottom-right">Jakarta</div>
         <div className="top-left">London</div>
         <div className="bottom-left">New York</div>
+        <div className="places">
+          <div className="place">New York</div>
+          <div className="place">London</div>
+          <div className="place">Yokohama</div>
+          <div className="place">Jakarta</div>
+        </div>
       </div>
     </div>
   );

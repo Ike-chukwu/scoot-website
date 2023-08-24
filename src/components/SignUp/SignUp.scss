@@ -27,3 +27,24 @@
             width: 900px;
         }
 }}
+
+
+@media (max-width: 960px){
+    .sign-up {
+     
+        .inner {
+            width: unset;
+            flex-direction: column;
+            padding-inline: 2rem;
+            justify-content: center;
+            text-align: center;
+            gap: 6rem;
+           
+            .btn-row {
+              img{
+                width: 40%;
+                margin-inline: auto;
+              }
+            }
+        }
+}}

@@ -43,3 +43,23 @@
       margin-inline: auto;
     }
   }
+
+  @media (max-width: 960px) {
+    .value {
+      width: 100%;
+
+      p{
+        width: 70%;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .value {
+
+      p{
+        width: 100%;
+      }
+    }
+  }
+  

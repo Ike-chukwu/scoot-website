@@ -72,3 +72,59 @@
     }
   }
 }
+
+@media (max-width: 940px) {
+  .detail {
+    width: unset;
+    padding-inline: 2rem;
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+      margin-inline: auto;
+      text-align: center;
+      &::before {
+        content: url(../../assets/patterns/left-downward-arrow.svg);
+        position: absolute;
+        top: 50%;
+        left: -30%;
+      }
+      display: flex;
+      img {
+        width: 85%;
+        margin-inline: auto;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: -55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .detail {
+    .right {
+      &::before {
+        left: 0%;
+      }
+      display: flex;
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .detail {
+    .right {
+      &::before {
+        content: "";
+      }
+    }
+  }
+}

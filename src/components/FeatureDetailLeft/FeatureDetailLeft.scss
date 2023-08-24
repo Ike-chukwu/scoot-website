@@ -91,3 +91,73 @@
     }
   }
 }
+
+@media (max-width: 940px) {
+  .detail-left {
+    width: unset;
+    padding-inline: 2rem;
+    .left {
+      margin-top: unset;
+      width: 100%;
+      img {
+        width: 85%;
+      }
+      &::before {
+        content: url(../../assets/patterns/right-arrow.svg);
+        position: absolute;
+        transform: rotate(360deg);
+        left: -20%;
+        top: unset;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: -55%;
+        bottom: 0%;
+      }
+    }
+    .right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-left {
+    .left {
+      margin-top: unset;
+      width: 100%;
+      img {
+        width: 90%;
+      }
+      &::before {
+        content: url(../../assets/patterns/right-arrow.svg);
+        position: absolute;
+        transform: rotate(360deg);
+        left: -45%;
+        top: unset;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: -55%;
+        bottom: 0%;
+      }
+    }
+    .right {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .detail-left {
+    .left {
+      &::before {
+        content: "";
+      }
+    }
+  }
+}

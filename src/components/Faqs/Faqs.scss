@@ -28,8 +28,25 @@
 
     .faqs-inner-content {
       flex-direction: column;
-      
-      h2{
+
+      h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .faqs {
+    width: unset;
+    padding-inline: 2rem;
+
+    .faqs-inner-content {
+      flex-direction: column;
+
+      h2 {
         width: 100%;
         text-align: center;
         margin-bottom: 2rem;

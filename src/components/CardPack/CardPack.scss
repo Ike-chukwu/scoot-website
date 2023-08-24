@@ -35,8 +35,7 @@
   }
 }
 
-
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   .pack {
     padding-block: 10rem;
     width: 900px;
@@ -44,6 +43,39 @@
     .card {
       width: 70%;
       margin-inline: auto;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .pack {
+    padding-block: 10rem;
+    width: unset;
+
+    .card {
+      width: 90%;
+      margin-inline: auto;
+
+      .card-inner-left {
+        .find {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 580px) {
+  .pack {
+    padding-block: 10rem;
+    width: unset;
+
+    .card {
+      flex-direction: column;
+      gap: 3rem;
+      text-align: center;
     }
   }
 }

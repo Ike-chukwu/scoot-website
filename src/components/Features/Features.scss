@@ -1,81 +1,141 @@
-.features{
-    // height: 80vh;
+.features {
+  // height: 80vh;
+  width: 1200px;
+  margin-inline: auto;
+  padding-block: 10rem;
+  .features-icons-pack {
+    position: relative;
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1400px;
+      height: 14px;
+      background: grey;
+      z-index: -1;
+      left: -50%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #e6edf4;
+    }
+  }
+
+  .features-content {
     width: 1200px;
-    margin-inline: auto;
-    padding-block: 10rem;
-    .features-icons-pack{
-        position: relative;
-        display: flex;
-        width:990px;
-        justify-content: space-between;
-
-        &::before{
-            position: absolute;
-            content: '';
-            width: 1400px;
-            height: 14px;
-            background: grey;
-            z-index: -1;
-            left: -50%;
-           top: 50%;
-           transform: translateY(-50%);
-           background: #E6EDF4;
-        }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    .fatures-card {
+      width: 300px;
+      h3 {
+        font-size: 2rem;
+      }
+      img {
+        display: none;
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-top: 1.5rem;
+        // width: 280px;
+      }
     }
+  }
+}
 
+@media (max-width: 1260px) {
+  .features {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    // background: blue;
+
+    .features-icons-pack {
+      flex-direction: column;
+      width: unset;
+      gap: 4rem;
+
+      &::before {
+        // transform: rotate(90deg);
+        left: 45%;
+        top: 0;
+        width: 10px;
+        height: 700px;
+      }
+    }
     .features-content {
-        width:1200px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5rem;
-        .fatures-card{
-            width: 300px;
-            h3{
-                font-size: 2rem;
-            }
-            img{
-                display: none;
-            }
-            p{
-                font-size: 1.6rem;
-                line-height: 1.5;
-                margin-top: 1.5rem;
-                // width: 280px;
-            }
-        }
+      width: unset;
+      flex-direction: column;
+      gap: 4rem;
+      .fatures-card {
+        width: 400px;
+      }
     }
+  }
 }
 
 
-@media(max-width:1260px){
-    .features{
-        width: 900px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10rem;
-        // background: blue;
-        
-        .features-icons-pack{
-            flex-direction: column;
-            width:unset;
-            gap: 4rem;
-            
-        &::before{
-            // transform: rotate(90deg);
-            left: 45%;
-            top: 0;
-            width: 10px;
-            height: 700px;
-        }
-        }
-        .features-content {
-            width: unset;
-            flex-direction: column;
-            gap: 4rem;
-            .fatures-card{
-                width: 400px;
-            }
-        }
+
+@media (max-width: 940px) {
+  .features {
+    // height: 80vh;
+    padding-inline: 2rem;
+    width: unset;
+
+    .features-icons-pack {
+        display: none;
     }
+
+    .features-content {
+        width: unset;
+        gap: 6rem;
+        margin-top: 5rem;
+        .fatures-card {
+          width: 70%;
+          margin-inline: auto;
+          text-align: center;
+          h3 {
+           margin-block: 2rem;
+          }
+          img {
+            display: unset;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-top: 1.5rem;
+            width: 100%;
+          }
+        }
+      }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .features {
+    // padding-block: 5rem;
+    .features-content {
+        width: unset;
+        gap: 6rem;
+        margin-top: 5rem;
+        .fatures-card {
+          width: 100%;
+          h3 {
+           margin-block: 2rem;;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-top: 1.5rem;
+            width: 100%;
+          }
+        }
+      }
+  }
 }

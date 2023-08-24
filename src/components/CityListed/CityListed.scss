@@ -33,3 +33,18 @@
     }
   }
 }
+
+@media(max-width:950px){
+  .city-listed {
+    width: unset;
+    padding-top: unset;
+    padding-bottom: 10rem;
+    padding-inline: 2rem;
+    h1{
+      text-align: center;
+    }
+    p{
+      width: 100%;
+    }
+  }
+}

@@ -24,3 +24,13 @@
     }
   }
 }
+
+
+@media (max-width: 960px) {
+  .values {
+    .value-pack {
+      width: unset;
+      padding-inline: 2rem;
+    }
+  }
+}

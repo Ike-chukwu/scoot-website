@@ -37,3 +37,20 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .footer {
+    .footer-inner {
+        width: unset;
+        padding-inline: 2rem;
+        padding-block: 5rem;
+        flex-direction: column;
+        gap: 6rem;
+        .left-part{
+          flex-direction: column;
+          gap: unset;
+          gap: 6rem;
+        }
+    }
+  }
+}

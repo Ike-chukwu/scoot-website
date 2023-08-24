@@ -8,6 +8,7 @@
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 2rem;
+  transition: all 1s linear;
   &.active {
     height: fit-content;
     background: #fff4df;
@@ -45,4 +46,24 @@
   }
 }
 
+@media (max-width: 500px) {
+  .dropdown {
+    // padding: 0;
+    height: 100px;
 
+    p {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .dropdown {
+    // padding: 0;
+    height: 100px;
+    padding: 1rem;
+    p {
+      margin-top: 3rem;
+    }
+  }
+}
