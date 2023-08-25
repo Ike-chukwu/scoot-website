@@ -30,6 +30,7 @@ const Navbar = (props) => {
         <img
           className="menu-bar"
           onClick={() => props.setNavActive(!props.isNavActive)}
+          onTouchStart={() => props.setNavActive(!props.isNavActive)}
           src={bars}
           alt=""
         />
